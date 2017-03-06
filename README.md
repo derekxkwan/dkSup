@@ -1,4 +1,5 @@
 # dxkSup
 a start of a supercollider class library
 
-- DxkStut - stuttering effect
+- DxkStutL - stuttering effect with linear interp
+- DxkStutC - stuttering effec with cubic interp
