@@ -1,12 +1,11 @@
 //resettable phase impulse
-//from code from Fredrik Olofsson on the sc-users mailing list
+//adapted from code from Fredrik Olofsson on the sc-users mailing list
 
 DxkIpls {
 	* ar {
-		|freq = 0|
+		|freq = 0,t_trig|
 	var out, trig;
-	trig = HPZ1.kr(freq);
-	out = Phasor.ar(trig, freq.reciprocal/SampleRate.ir);
+	out = Phasor.ar(t_trig, freq/SampleRate.ir);
 	out = (out - Delay1.ar(out)) < 0;
 	^out
 	}
