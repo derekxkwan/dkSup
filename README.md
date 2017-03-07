@@ -2,6 +2,7 @@
 a start of a supercollider class library
 
 - DxkChangeTrig - trigger when input changes (or sent a trigger)
+- DxkFm - Fm synth
 - DxkIpls - resettable phase impulse
 - DxkNobuM - mono sample chopper/skipper
 - DxkNobuS - stereo sample chopper/skipper
