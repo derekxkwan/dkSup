@@ -2,6 +2,7 @@
 a start of a supercollider class library
 
 - DxkChangeTrig - trigger when input changes (or sent a trigger)
+- DxkDelays - delay classes (comb delays with lowpass filters)
 - DxkFm - Fm synth
 - DxkIpls - resettable phase impulse
 - DxkIpls - resettable phase impulse with random amp option

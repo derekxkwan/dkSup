@@ -1,11 +1,11 @@
-//resettable phase impulse
+//resettable phase ixbmpulse
 //adapted from code from Fredrik Olofsson on the sc-users mailing list
 
 DxkIpls {
 	* ar {
-		|freq = 0, mul = 1, t_trig|
+		|freq = 0, mul = 1, t_reset = 0|
 		var output;
-		output = Phasor.ar(t_trig, freq/SampleRate.ir);
+		output = Phasor.ar(t_reset, freq/SampleRate.ir);
 		output = (output - Delay1.ar(output)) < 0;
 		output = output * mul;	
 		^output
@@ -16,9 +16,9 @@ DxkIpls {
 
 DxkIplsR {
 	* ar {
-		|freq = 0, mul = 1, rand = 1, randlo = 0.001, t_trig|
-		var output, trig, amp;
-		output = Phasor.ar(t_trig, freq/SampleRate.ir);
+		|freq = 0, mul = 1, rand = 1, randlo = 0.001, t_reset = 0|
+		var output,  amp;
+		output = Phasor.ar(t_reset, freq/SampleRate.ir);
 		output = (output - Delay1.ar(output)) < 0;
 		output = output * mul;
 		output = Select.ar(rand, [output, output*Demand.ar(output, 0, Dwhite(randlo/mul, 1))]);
