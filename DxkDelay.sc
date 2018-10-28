@@ -1,5 +1,5 @@
 DxkFbdellopN {
-	* ar {|in, maxdelay = 1, delaytime =1, fb = 0, lop = 100, dry = 1, wet = 1|
+	* ar {|in, maxdelay = 1, delaytime =1, fb = 0.75, lop = 1000, dry = 1, wet = 1|
 		var snd, numChan = in.numChannels;
 		var cur_serv = Server.local, delay_comp = cur_serv.options.blockSize/cur_serv.sampleRate;
 		var real_delay = (delaytime - delay_comp).max(0);
@@ -13,7 +13,7 @@ DxkFbdellopN {
 }
 
 DxkFbdellopL {
-	* ar {|in, maxdelay = 1, delaytime =1, fb = 0, lop = 100, dry = 1, wet = 1|
+	* ar {|in, maxdelay = 1, delaytime =1, fb = 0.75, lop = 1000, dry = 1, wet = 1|
 		var snd, numChan = in.numChannels;
 		var cur_serv = Server.local, delay_comp = cur_serv.options.blockSize/cur_serv.sampleRate;
 		var real_delay = (delaytime - delay_comp).max(0);
@@ -27,7 +27,7 @@ DxkFbdellopL {
 }
 
 DxkFbdellopC {
-	* ar {|in, maxdelay = 1, delaytime =1, fb = 0, lop = 100, dry = 1, wet = 1|
+	* ar {|in, maxdelay = 1, delaytime =1, fb = 0.75, lop = 1000, dry = 1, wet = 1|
 		var snd, numChan = in.numChannels;
 		var cur_serv = Server.local, delay_comp = cur_serv.options.blockSize/cur_serv.sampleRate;
 		var real_delay = (delaytime - delay_comp).max(0);
