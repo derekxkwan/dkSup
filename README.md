@@ -8,6 +8,7 @@ a start of a supercollider class library
 - DxkIpls - resettable phase impulse with random amp option
 - DxkNobuM - mono sample chopper/skipper
 - DxkNobuS - stereo sample chopper/skipper
+- DxkPan - stereo panner (1 or 2 channel input)
 - DxkStutL - stuttering effect with linear interp
 - DxkStutC - stuttering effec with cubic interp
 
