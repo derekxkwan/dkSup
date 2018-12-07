@@ -1,5 +1,5 @@
 # dxkSup
-a start of a supercollider class library
+a start of a supercollider class library (gpl v 3)
 
 - DxkChangeTrig - trigger when input changes (or sent a trigger)
 - DxkDelays - delay classes (comb delays with lowpass filters)
