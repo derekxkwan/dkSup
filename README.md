@@ -6,6 +6,7 @@ a start of a supercollider class library (gpl v 3)
 - DxkFm - Fm synth
 - DxkIpls - resettable phase impulse
 - DxkIpls - resettable phase impulse with random amp option
+- DxkMarkov - first-order Markov (second-order coming soon)
 - DxkNobuM - mono sample chopper/skipper
 - DxkNobuS - stereo sample chopper/skipper
 - DxkPan - stereo panner (1 or 2 channel input)
