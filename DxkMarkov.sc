@@ -3,10 +3,11 @@ DxkMarkov1 {
 	var <dict;
 
 	*new{
-		^super.new.init();
+		^super.new.initM1();
 	}
 
-	init{
+	initM1{
+
 		dict = Dictionary.new;
 		lastNote = nil;
 	}
@@ -77,18 +78,16 @@ DxkMarkov1 {
 
 DxkMarkov2 : DxkMarkov1 {
 	
-	var <lastNote;
 	var <lastNote2;
-	var <dict;
+
 
 	//lastNote2 = last last note
 	*new{
-		^super.new.init();
+		^super.new.initM2();
 	}
 
-	init{
-		dict = Dictionary.new;
-		lastNote = nil;
+	initM2{
+
 		lastNote2 = nil;
 	}
 
@@ -96,7 +95,7 @@ DxkMarkov2 : DxkMarkov1 {
 	getNext{
 		var cur_last2 = lastNote2;
 		var cur_last = lastNote;
-		var want_key = lastNote2.asString ++ "|" ++ lastNote.asString;
+		var want_key = cur_last2.asString ++ "|" ++ cur_last.asString;
 		var last_exists = dict.atFail(want_key, nil).notNil;
 		var next_poss; //next possibilities
 		var next_note;
